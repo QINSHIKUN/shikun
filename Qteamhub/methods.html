@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Methods - Qteam Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Qteam Hub</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="data.html">Data</a>
+                <a href="methods.html" class="active">Methods</a>
+                <a href="team.html">Team</a>
+            </div>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Research Methods Library</h1>
+            <p>Explore our collection of social science research methodologies and tools</p>
+        </section>
+
+        <!-- 方法分类导航 -->
+        <section class="method-categories">
+            <div class="category-tabs">
+                <button class="tab active">Quantitative Methods</button>
+                <button class="tab">Qualitative Methods</button>
+                <button class="tab">Mixed Methods</button>
+                <button class="tab">Data Analysis Tools</button>
+            </div>
+        </section>
+
+        <!-- 方法列表 -->
+        <section class="methods-container">
+            <div class="method-grid">
+                <!-- 定量方法卡片 -->
+                <article class="method-card">
+                    <div class="method-header">
+                        <h2>Statistical Analysis</h2>
+                        <span class="method-type">Quantitative</span>
+                    </div>
+                    <div class="method-content">
+                        <div class="method-description">
+                            <p>Comprehensive guide to statistical analysis in social science research</p>
+                            <ul>
+                                <li>Regression Analysis</li>
+                                <li>Factor Analysis</li>
+                                <li>Structural Equation Modeling</li>
+                            </ul>
+                        </div>
+                        <div class="method-resources">
+                            <a href="#" class="resource-link">📚 Tutorial</a>
+                            <a href="#" class="resource-link">🔧 Tools</a>
+                            <a href="#" class="resource-link">📊 Examples</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 定性方法卡片 -->
+                <article class="method-card">
+                    <div class="method-header">
+                        <h2>Interview Analysis</h2>
+                        <span class="method-type">Qualitative</span>
+                    </div>
+                    <div class="method-content">
+                        <div class="method-description">
+                            <p>Methods for conducting and analyzing research interviews</p>
+                            <ul>
+                                <li>Interview Design</li>
+                                <li>Coding Techniques</li>
+                                <li>Thematic Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="method-resources">
+                            <a href="#" class="resource-link">📚 Guide</a>
+                            <a href="#" class="resource-link">📝 Templates</a>
+                            <a href="#" class="resource-link">🎯 Best Practices</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 混合方法卡片 -->
+                <article class="method-card">
+                    <div class="method-header">
+                        <h2>Mixed Methods Research</h2>
+                        <span class="method-type">Mixed</span>
+                    </div>
+                    <div class="method-content">
+                        <div class="method-description">
+                            <p>Integration of quantitative and qualitative approaches</p>
+                            <ul>
+                                <li>Research Design</li>
+                                <li>Data Integration</li>
+                                <li>Analysis Strategies</li>
+                            </ul>
+                        </div>
+                        <div class="method-resources">
+                            <a href="#" class="resource-link">📚 Framework</a>
+                            <a href="#" class="resource-link">📊 Case Studies</a>
+                            <a href="#" class="resource-link">🔍 Examples</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 工具推荐 -->
+            <section class="tools-section">
+                <h2>Recommended Tools</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <img src="images/tools/spss.png" alt="SPSS">
+                        <h3>SPSS</h3>
+                        <p>Statistical analysis software</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <img src="images/tools/nvivo.png" alt="NVivo">
+                        <h3>NVivo</h3>
+                        <p>Qualitative data analysis</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <img src="images/tools/r.png" alt="R">
+                        <h3>R Programming</h3>
+                        <p>Statistical computing</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: research@qteamhub.org</p>
+                <p>Location: Research Center, University</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Publications</a>
+                <a href="#">Resources</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Qteam Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+</body>
+</html> 

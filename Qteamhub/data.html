@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Data - Qteam Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Qteam Hub</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="data.html" class="active">Data</a>
+                <a href="methods.html">Methods</a>
+                <a href="team.html">Team</a>
+            </div>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Research Data Repository</h1>
+            <p>Access and explore our collection of social science research datasets</p>
+        </section>
+
+        <section class="data-grid">
+            <div class="data-container">
+                <article class="data-card horizontal">
+                    <div class="data-info">
+                        <h2>Social Network Analysis Dataset</h2>
+                        <p class="data-meta">Updated: 2024-01 | Size: 2.5GB | Format: CSV</p>
+                        <p class="data-description">
+                            Comprehensive social network data collected from multiple urban communities,
+                            including relationship patterns and interaction frequencies.
+                        </p>
+                        <div class="data-tags">
+                            <span>Social Networks</span>
+                            <span>Urban Studies</span>
+                            <span>Community Research</span>
+                        </div>
+                        <a href="#" class="button">Access Dataset</a>
+                    </div>
+                </article>
+
+                <article class="data-card horizontal">
+                    <div class="data-info">
+                        <h2>Public Opinion Survey 2023</h2>
+                        <p class="data-meta">Updated: 2023-12 | Size: 1.8GB | Format: SPSS</p>
+                        <p class="data-description">
+                            National survey data covering public opinions on social issues,
+                            political attitudes, and demographic information.
+                        </p>
+                        <div class="data-tags">
+                            <span>Public Opinion</span>
+                            <span>Survey Data</span>
+                            <span>Social Attitudes</span>
+                        </div>
+                        <a href="#" class="button">Access Dataset</a>
+                    </div>
+                </article>
+
+                <article class="data-card horizontal">
+                    <div class="data-info">
+                        <h2>Educational Inequality Study</h2>
+                        <p class="data-meta">Updated: 2023-11 | Size: 3.2GB | Format: R Data</p>
+                        <p class="data-description">
+                            Longitudinal study data on educational outcomes across different
+                            socioeconomic groups and regions.
+                        </p>
+                        <div class="data-tags">
+                            <span>Education</span>
+                            <span>Inequality</span>
+                            <span>Longitudinal Study</span>
+                        </div>
+                        <a href="#" class="button">Access Dataset</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="data-filters">
+            <h3>Filter Datasets</h3>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Research Area</label>
+                    <select>
+                        <option>All Areas</option>
+                        <option>Social Networks</option>
+                        <option>Public Opinion</option>
+                        <option>Education</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Year</label>
+                    <select>
+                        <option>All Years</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Format</label>
+                    <select>
+                        <option>All Formats</option>
+                        <option>CSV</option>
+                        <option>SPSS</option>
+                        <option>R Data</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Qteam Hub. All rights reserved.</p>
+            <p>Contact: research@qteamhub.org</p>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+</body>
+</html> 
