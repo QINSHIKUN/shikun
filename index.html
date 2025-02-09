@@ -5,172 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qteam Hub - Social Science Research Platform</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Qteam Hub</div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="data.html">Data</a>
-                <a href="methods.html">Methods</a>
-                <a href="team.html">Team</a>
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Qteam</span>
+                        <span class="logo-tagline">Research Hub</span>
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="data.html">Data</a>
+                        <a href="articles.html">Articles</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                </div>
             </div>
-            <select id="language-select" onchange="changeLanguage(this.value)">
-                <option value="en">English</option>
-                <option value="zh">中文</option>
-            </select>
         </nav>
     </header>
 
     <main>
-        <!-- 主横幅区域 -->
-        <section class="hero">
+        <section class="hero" style="background-image: url('images/home.jpg')">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Advancing Social Science Research</h1>
-                <p class="subtitle">A comprehensive platform for sharing research data and methodologies</p>
-                <div class="hero-buttons">
-                    <a href="data.html" class="button primary">Explore Data</a>
-                    <a href="methods.html" class="button secondary">Learn Methods</a>
+                <div class="content-grid">
+                    <div class="intro-section">
+                        <h1>Welcome to Our Research Hub</h1>
+                        <div class="slogan">
+                            <span class="slogan-text">Connect</span>
+                            <span class="dot">·</span>
+                            <span class="slogan-text">Share</span>
+                            <span class="dot">·</span>
+                            <span class="slogan-text">Advance</span>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="mission-statement">
+                            Empowering researchers with data-driven insights and collaborative opportunities in social science research
+                        </p>
+                    </div>
+                    
+                    <div class="updates-section">
+                        <div class="updates-card">
+                            <div class="update-item">
+                                <span class="update-label">Latest Article</span>
+                                <a href="articles.html" class="update-content">
+                                    <h3>The Impact of Social Networks on Economic Development</h3>
+                                    <p class="update-excerpt">
+                                        Exploring how social connections influence economic outcomes across different regions...
+                                    </p>
+                                    <div class="update-meta">
+                                        <span class="update-date">March 20, 2024</span>
+                                        <span class="read-more">Read More →</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="update-item">
+                                <span class="update-label">Latest Dataset</span>
+                                <a href="data.html" class="update-content">
+                                    <h3>China Regional Economic Network Data</h3>
+                                    <p class="update-excerpt">
+                                        Comprehensive dataset covering economic relationships between Chinese provinces...
+                                    </p>
+                                    <div class="update-meta">
+                                        <span class="update-date">March 15, 2024</span>
+                                        <span class="read-more">View Dataset →</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 最新更新区域 -->
-        <section class="latest-updates">
-            <h2>Latest Updates</h2>
-            <div class="updates-grid">
-                <div class="update-card">
-                    <span class="update-date">March 2024</span>
-                    <h3>New Dataset Release</h3>
-                    <p>Social Media Impact Analysis Dataset (2023-2024)</p>
-                    <a href="#" class="read-more">Learn More →</a>
-                </div>
-                <div class="update-card">
-                    <span class="update-date">February 2024</span>
-                    <h3>Research Method Guide</h3>
-                    <p>Advanced Network Analysis Techniques</p>
-                    <a href="#" class="read-more">Learn More →</a>
-                </div>
-                <div class="update-card">
-                    <span class="update-date">January 2024</span>
-                    <h3>Collaboration Update</h3>
-                    <p>New Partnership with Global Research Institute</p>
-                    <a href="#" class="read-more">Learn More →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 主要研究领域 -->
-        <section class="research-areas">
-            <h2>Research Areas</h2>
-            <div class="areas-container">
-                <div class="area-card">
-                    <div class="area-icon">📊</div>
-                    <h3>Social Networks</h3>
-                    <p>Analysis of social relationships and structures</p>
-                    <ul>
-                        <li>Community Detection</li>
-                        <li>Network Dynamics</li>
-                        <li>Influence Analysis</li>
-                    </ul>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">📈</div>
-                    <h3>Public Opinion</h3>
-                    <p>Survey research and attitude analysis</p>
-                    <ul>
-                        <li>Political Attitudes</li>
-                        <li>Social Values</li>
-                        <li>Media Effects</li>
-                    </ul>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">🎓</div>
-                    <h3>Education</h3>
-                    <p>Educational inequality and outcomes</p>
-                    <ul>
-                        <li>Access to Education</li>
-                        <li>Learning Outcomes</li>
-                        <li>Policy Analysis</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 资源统计 -->
-        <section class="statistics">
-            <div class="stat-container">
-                <div class="stat-item">
-                    <h3>50+</h3>
-                    <p>Research Datasets</p>
-                </div>
-                <div class="stat-item">
-                    <h3>30+</h3>
-                    <p>Research Methods</p>
-                </div>
-                <div class="stat-item">
-                    <h3>20+</h3>
-                    <p>Team Members</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100+</h3>
-                    <p>Publications</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 快速访问链接 -->
-        <section class="quick-links">
-            <h2>Quick Access</h2>
-            <div class="links-grid">
-                <a href="#" class="quick-link">
-                    <span>📊</span>
-                    <h4>Data Repository</h4>
-                </a>
-                <a href="#" class="quick-link">
-                    <span>📚</span>
-                    <h4>Methods Library</h4>
-                </a>
-                <a href="#" class="quick-link">
-                    <span>👥</span>
-                    <h4>Research Team</h4>
-                </a>
-                <a href="#" class="quick-link">
-                    <span>📝</span>
-                    <h4>Publications</h4>
-                </a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: research@qteamhub.org</p>
-                <p>Location: Research Center, University</p>
+                <h4 class="footer-title">Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="label">Email:</span>
+                        <a href="mailto:shikunqin@foxmail.com">shikunqin@foxmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Address:</span>
+                        <div class="address-info">
+                            <p>555, Liutai Avenue, Wenjiang District, Chengdu, Sichuan, P. R. China</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-section">
-                <h4>Quick Links</h4>
-                <a href="#">About Us</a>
-                <a href="#">Publications</a>
-                <a href="#">Resources</a>
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="https://dataverse.harvard.edu/" target="_blank">Harvard Dataverse</a>
+                    <a href="https://data.worldbank.org/" target="_blank">World Bank Data</a>
+                    <a href="https://www.icpsr.umich.edu/" target="_blank">ICPSR</a>
+                    <a href="https://www.ssrn.com/" target="_blank">SSRN</a>
+                    <a href="https://www.nber.org/research/data" target="_blank">NBER Data</a>
+                </div>
             </div>
             <div class="footer-section">
-                <h4>Follow Us</h4>
+                <h4 class="footer-title">Follow Us</h4>
                 <div class="social-links">
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=auSOhg8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/shikunqin" target="_blank">LinkedIn</a>
+                    <a href="https://orcid.org/0000-0001-5039-048X" target="_blank">ORCID</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Qteam Hub. All rights reserved.</p>
-        </div>
     </footer>
 
-    <script src="js/language.js"></script>
+    <script>
+        // 滚动时改变导航栏样式
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html> 
